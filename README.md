@@ -4,4 +4,4 @@ If you're like me, then determining what to eat for lunch or dinner is the great
 
 Now, you don't have to decide! Let this simple python program do it for you!
 
-(https://media.giphy.com/media/jKaFXbKyZFja0/giphy.gif)
+![](https://media.giphy.com/media/jKaFXbKyZFja0/giphy.gif)
