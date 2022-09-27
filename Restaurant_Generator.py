@@ -71,7 +71,7 @@ else:
 
 if name == "":
   print("Error! Please enter a name: ")
-  name = input("Enter name")
+  name = input("Enter name: ")
 else:
   print(name + " wants to know " + "\'" + question + "\'")
   print("Magic Restaurant Generator says: " + answer)
