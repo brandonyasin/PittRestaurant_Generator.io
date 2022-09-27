@@ -69,10 +69,11 @@ elif random_number == 31:
 else:
   answer = "Feast on dorm room snacks"
 
-if name == "":
-  print("Error! Please enter a name: ")
+while name == "":
+  print("Error! Please enter a name")
   name = input("Enter name: ")
-else:
+  
+while name != "":
   print(name + " wants to know " + "\'" + question + "\'")
   print("Magic Restaurant Generator says: " + answer)
   print("Would you like to know what time " + answer + " closes on weekdays?")
@@ -141,7 +142,7 @@ else:
         case "Moes Southwest Grill":
             hours = "8 PM"
     print(answer + " closes at " + hours)
+    break
   elif close_input == "No":
       print("Ok! Goodbye!")
-    
- 
+      break
