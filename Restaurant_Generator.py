@@ -62,8 +62,12 @@ elif random_number == 28:
     answer = "Divy Coffee and Buns"
 elif random_number == 29:
     answer = "Chick'n Bubbly"
+elif random_number == 30:
+    answer = "Stack'd"
+elif random_number == 31:
+    answer = "Moes Southwest Grill"
 else:
-  answer = "Tbh, campus food sucks. Just get some coffee mate."
+  answer = "Feast on dorm room snacks"
 
 if name == "":
   print("Error! Please enter a name: ")
@@ -71,4 +75,73 @@ if name == "":
 else:
   print(name + " wants to know " + "\'" + question + "\'")
   print("Magic Restaurant Generator says: " + answer)
+  print("Would you like to know what time " + answer + " closes on weekdays?")
+  close_input = input("Yes or No: ")
+  if close_input == 'Yes':
+    hours = ""
+    match answer:
+        case "Viva Los Tacos":
+            hours = "12 AM"
+        case "Chick-fil-A":
+            hours = "8 PM"
+        case "Pie Express Pizza":
+            hours = "11 PM"
+        case "Prince of India":
+            hours = "2:30 (lunch) and 9:30 (dinner)"
+        case "Oishii Bento":
+            hours = "9 PM"
+        case "Hello Bistro":
+            hours = "9 PM"
+        case "K-Town Korean Food":
+            hours = "8 PM"
+        case "Roots Natural Kitchen":
+            hours = "9:30 PM"
+        case "Piada Italian Street Food":
+            hours = "10 PM"
+        case "CHiKN":
+            hours = "10 PM"
+        case "The Eatery of the Perch":
+            hours = "12 AM and 10 PM"
+        case "Primanti Brothers":
+            hours = "12 AM"
+        case "The Porch at Schenley":
+            hours = "10 PM"
+        case "Halal Pitt":
+            hours = "10 PM"
+        case "Five Guys":
+            hours = "10 PM"
+        case "Chick-n Grille":
+            hours = "10 PM" 
+        case "JJ Poke Bowl & Taiwanese Bubble Tea":
+            hours = "8 PM"
+        case "芋见BAO":
+            hours = "9:30 PM"
+        case "El Jefe's Taqueria":
+            hours = "3 AM"
+        case "The Roost at Cathy":
+            hours = "7 PM"
+        case "The Columbian Spot":
+            hours = "9 PM "
+        case "Noodle House":
+            hours = "9:30 PM"
+        case "McDonalds":
+            hours = "Opens 24 hours"
+        case "Jimmy John Sandwiches":
+            hours = "10 PM"
+        case "Einsteins Bros":
+            hours = "4 PM"
+        case "Divy Coffee and Buns":
+            hours = "6 PM"
+        case "Chick'n Bubbly":
+            hours = "9 PM"
+        case "Noodles and Company":
+            hours = "10 PM"
+        case "Stack'd":
+            hours = "12 AM"
+        case "Moes Southwest Grill":
+            hours = "8 PM"
+    print(answer + " closes at " + hours)
+  elif close_input == "No":
+      print("Ok! Goodbye!")
+    
  
